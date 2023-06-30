@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  rel='stylesheet' href="style.css"> 
+    <title>Quiz App</title>
+</head>
+<body>
+ <nav>
+    <ul>
+        <li >Timer : <span id='timer'> </span></li>
+        <li >View high scores <span id ='score'> </span></li>
+    </ul>
+ </nav>
+
+<div class="quiz-container" id="quiz">
+    <div class="fist-page" >
+        <h1> Coding Quiz Challenge</h1>
+        <p> Try to answer the following questions within the 
+            time limit. Keep in mind that incorrect answers will
+            penalize your score/time by ten seconds
+        </p>
+        <button id="start">Start Quiz</button>
+    </div>
+   <div class="quiz-header">
+    <h2 id="question">Question Textarea</h2>
+    <ul>
+        <li>
+            <input  type="radio" name="answer" id="a" class="answer">
+            <label for="a" id="a_text">Answer</label>
+        </li>
+        <li>
+            <input  type="radio" name="answer" id="b" class="answer">
+            <label for="b" id="b_text">Answer</label>
+        </li>
+        <li>
+            <input  type="radio" name="answer" id="c" class="answer">
+            <label for="c" id="c_text">Answer</label>
+        </li>
+        <li>
+            <input  type="radio" name="answer" id="d" class="answer">
+            <label for="d" id="d_text">Answer</label>
+        </li>
+    </ul>
+    <button id="next">Next</button>
+   </div>
+
+</div>
+<div id="intials">
+    <section id="initsection">
+        <h2>All done!</h2>
+        <p id="intpar" > </p>
+        <form>Enter initials <input type="text" id="input"> </input> <button id="sumBtn"> Submit</button></form>
+    </section>
+</div>
+<div id="resultbord">
+    <section id="resulsection">
+    <h2>High scores</h2>
+    <form><input type="text"id='resultinput'></input></form>
+    <button id="GoBtn"> Go back </button><button id="ClearBtn">Clear high scores</button>
+    </section>
+</div>
+<footer id="footer ">
+    <div id="result"> </div>
+
+</footer>
+
+
+<script src="script.js"></script>
+</body>
+</html>
